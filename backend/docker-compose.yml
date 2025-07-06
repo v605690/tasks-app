@@ -1,10 +1,8 @@
-version: '3.8'
 services:
-  frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  db:
+    image: postgres:latest
     ports:
-      - "5173:5173"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: changemeinprod!
