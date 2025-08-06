@@ -1,4 +1,7 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
 *.java linguist-detectable=true
-*.ts linguist-detectable=false
+*.ts linguist-language=Java
+*.tsx linguist-language=Java
+
+frontend/** linguist-vendored
